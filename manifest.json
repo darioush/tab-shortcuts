@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+
+    "name": "Tab Shortcuts",
+    "description": "This extension allows shortcuts for next / previous tabs to be reassigned",
+    "version": "0.1",
+
+    "permissions": [
+        "tabs"
+    ],
+
+    "commands" : {
+        "next-tab" : { 
+            "suggested_key" : { "default" : "Ctrl+J" },
+            "description" : "Go to next tab"
+        },
+        "prev-tab" : {
+            "suggested_key" : { "default" : "Ctrl+K" },
+            "description" : "Go to previous tab"
+        }, 
+        "remap-downloads" : {
+            "suggested_key" : { "default" : "Ctrl+Shift+J" },
+            "description" : "New downloads shortcut"
+        }
+    },
+
+    "background" : {
+        "scripts" : ["script.js"]
+    }
+}
